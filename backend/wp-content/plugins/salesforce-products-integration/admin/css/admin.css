@@ -1,0 +1,226 @@
+/* Salesforce Admin Styles */
+.salesforce-admin {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Environment Switcher */
+.environment-buttons {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.environment-form {
+    flex: 1;
+}
+
+.environment-btn {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    position: relative;
+}
+
+.environment-btn .dashicons {
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 10px;
+}
+
+.environment-btn.active {
+    border: 3px solid #2271b1;
+}
+
+.current-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #2271b1;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+/* Environment Info */
+.environment-info {
+    background: #f6f7f7;
+    border: 1px solid #c3c4c7;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.env-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.env-development {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.env-production {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.env-descriptions {
+    margin-top: 20px;
+}
+
+.env-description {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid;
+}
+
+.dev-desc {
+    border-left-color: #17a2b8;
+}
+
+.prod-desc {
+    border-left-color: #dc3545;
+}
+
+.env-description h3 {
+    margin-top: 0;
+}
+
+.env-description ul {
+    margin: 10px 0 0 20px;
+}
+
+/* Status Cards */
+.status-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.status-card {
+    background: white;
+    border: 1px solid #c3c4c7;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.status-card h3 {
+    margin: 0 0 10px 0;
+    color: #646970;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.status-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2271b1;
+}
+
+.api-status {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Quick Actions */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* Modal */
+.salesforce-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 90%;
+}
+
+.modal-body {
+    margin: 20px 0;
+}
+
+.test-progress {
+    text-align: center;
+}
+
+.test-result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.test-result.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.test-result.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Form Table */
+.form-table th {
+    width: 200px;
+}
+
+.form-actions {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #c3c4c7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .environment-buttons {
+        flex-direction: column;
+    }
+    
+    .status-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+    
+    .action-buttons .button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
